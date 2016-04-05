@@ -35,7 +35,7 @@ public class MainPresenter {
 
     public void onDetachActivity() {
         realm.close();
-        activity.finish();
+        activity = null;
     }
 
     private void loadData() {

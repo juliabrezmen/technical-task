@@ -1,10 +1,17 @@
 package com.technicaltask.app.data;
 
+import com.google.gson.annotations.SerializedName;
+
 public class User {
+    @SerializedName("id")
     private String id;
+    @SerializedName("picture")
     private String picture;
+    @SerializedName("name")
     private String name;
+    @SerializedName("title")
     private String title;
+    @SerializedName("text")
     private String text;
 
     public String getId() {
